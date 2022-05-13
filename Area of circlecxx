@@ -1,0 +1,22 @@
+//The program is Coded By Basanta Chaudhary
+/*    Wap to find area of Circle using function    */
+#include <conio.h>
+#include <stdio.h>
+#define PI 3.14
+float areaofCircle(float radius);
+int main()
+{
+	float r;
+	float area;
+	printf("Enter a radius of Circle:");
+	scanf("%f", &r);
+	area = areaofCircle(r);
+	printf("The area of Circle is:%f", area);
+	return 0;
+}
+float areaofCircle(float radius)
+{
+	float a;
+	a = PI * radius * radius;
+	return a;
+}
